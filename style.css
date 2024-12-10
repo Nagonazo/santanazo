@@ -1,9 +1,12 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", sans-serif;
-  color: #fff;
-  background: url('santona.jpg') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+    background-image: url('santona.jpg'); /* 画像のURLを指定 */
+    background-size: cover; /* 背景を引き伸ばす */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返さない */
+    height: 100vh; /* ビューポート全体の高さ */
+    width: 100vw; /* ビューポート全体の幅 */
 }
 
 .container {
