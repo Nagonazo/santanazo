@@ -8,21 +8,29 @@
 </head>
 <body>
     <div class="background">
+        <div class="aurora"></div>
+        <div class="aurora" style="top: 20%; left: -20%;"></div>
         <header class="header">
             <h1>ブラックサンタからの挑戦状</h1>
         </header>
         <main class="content">
-            <div class="letter">
-                <h2>ブラックサンタからの手紙</h2>
-                <p>
-                    世界中の子供たちがいい子で過ごしたことで、私ブラックサンタの仕事が無くなってしまいました。  
-                    退屈しのぎに、いたずらでフェアリーたちを閉じ込めてしまったのですが、  
-                    それが原因でサンタたちはプレゼントを配ることができなくなりました。  
-                    どうか、フェアリーたちを救い出してください！  
-                </p>
-                <p>―― ブラックサンタ</p>
+            <div class="letter-container">
+                <div class="letter">
+                    <h2>ブラックサンタからの手紙</h2>
+                    <p>
+                        世界中の子供たちがいい子で過ごしたことで、私ブラックサンタの仕事が無くなってしまいました。  
+                        退屈しのぎに、いたずらでフェアリーたちを閉じ込めてしまったのですが、  
+                        それが原因でサンタたちはプレゼントを配ることができなくなりました。  
+                        どうか、フェアリーたちを救い出してください！
+                    </p>
+                    <p>―― ブラックサンタ</p>
+                </div>
             </div>
-            <button class="start-button" onclick="location.href='game.html'">ゲームを始める</button>
+            <div class="switch-button-container">
+                <button class="switch-button" onclick="location.href='game.html'">
+                    <span>START</span>
+                </button>
+            </div>
         </main>
     </div>
 </body>
