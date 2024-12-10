@@ -1,10 +1,68 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", sans-serif;
-  color: #fff;
-  background: url('santona.jpg') no-repeat center center/cover;
+/* 全体設定 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
 }
+
+/* ヘッダー部分（画像背景） */
+.header {
+    background-image: url('santona.jpg'); /* 上の画像を使用 */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* ヘッダー部分の高さ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+/* メインコンテンツ部分（白背景） */
+.main-content {
+    background: white;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 雪を降らせるアニメーション */
+.snow-container {
+    position: relative;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+    min-height: 200px;
+}
+
+.snow-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('snowflake.png'); /* 雪の画像（`snowflake.png`を用意） */
+    opacity: 0.8;
+    animation: snow-fall 10s linear infinite;
+    z-index: -1;
+}
+
+/* 雪のアニメーション */
+@keyframes snow-fall {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
 
 .container {
   text-align: center;
