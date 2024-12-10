@@ -7,6 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <canvas id="backgroundCanvas"></canvas>
+    <script>
+        const canvas = document.getElementById('backgroundCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Canvasサイズを画面全体に設定
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // 画像を描画
+        const img = new Image();
+        img.src = 'santona.jpg'; // 画像のパスを指定
+        img.onload = () => {
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        };
+    </script>
   <div class="container">
     <div class="letter-box">
       <h1>サンタクロースの手紙</h1>
